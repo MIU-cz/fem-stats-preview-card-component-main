@@ -119,14 +119,13 @@ body {
   width: 555px;
   min-height: 450px;
   background-color: hsl(277, 64%, 61%);
-  opacity: 0.65;
 }
 .card__picture img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.45;
+  mix-blend-mode: multiply;
 }
 @media (max-width: 768px) {
   .card__picture {
