@@ -1,2 +1,135 @@
-@import url(../resourse/normaliz-style-min.css);
-@import url(../resourse/fem-footer-style.css);/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import url(../resourse/normaliz-style.css);
+@import url(../resourse/fem-footer-style.css);
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.conteiner {
+  width: 100%;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify {
+  justify-content: center;
+  align-items: center;
+}
+
+.egg-justify {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  .flex-wrap {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.card {
+  width: 1110px;
+  min-height: 450px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 20px;
+}
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+}
+
+.card__content {
+  width: 555px;
+  min-height: 450px;
+  padding: 60px 70px 40px;
+}
+@media (max-width: 768px) {
+  .card__content {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .card__content {
+    text-align: center;
+  }
+}
+
+.card__content_header {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+.text-violet {
+  color: hsl(277, 64%, 61%);
+}
+
+.card__content_description {
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
+}
+
+.card__content_egg {
+  margin-right: 30px;
+}
+@media (max-width: 576px) {
+  .card__content_egg {
+    flex-wrap: wrap;
+    margin-right: auto;
+  }
+}
+
+.egg_item h3 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 26px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+}
+.egg_item p {
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+@media (max-width: 576px) {
+  .egg_item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.card__picture {
+  width: 555px;
+  min-height: 450px;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.65;
+}
+.card__picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.45;
+}
+@media (max-width: 768px) {
+  .card__picture {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
